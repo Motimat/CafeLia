@@ -1,4 +1,170 @@
-<!DOCTYPE/>
-<html>
-<p>mmdi</p>
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>کافه آمارو</title>
+
+  <style>
+    :root {
+      --bg: #0f0f0f;
+      --card: #1c1c1c;
+      --primary: #c59d5f;
+      --text: #f5f5f5;
+      --muted: #aaaaaa;
+      --radius: 16px;
+    }
+
+    * {
+      box-sizing: border-box;
+      font-family: "Segoe UI", Tahoma, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+    }
+
+    header {
+      padding: 32px 16px;
+      text-align: center;
+      background: linear-gradient(135deg, #1a1a1a, #000);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      color: var(--primary);
+    }
+
+    header p {
+      margin-top: 8px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 24px 16px 48px;
+    }
+
+    .menu-title {
+      font-size: 1.4rem;
+      margin-bottom: 16px;
+      color: var(--primary);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: var(--card);
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 16px;
+    }
+
+    .card-content h3 {
+      margin: 0 0 6px;
+      font-size: 1.1rem;
+    }
+
+    .card-content p {
+      margin: 0;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    .price {
+      margin-top: 12px;
+      font-weight: bold;
+      color: var(--primary);
+    }
+
+    footer {
+      text-align: center;
+      padding: 24px;
+      font-size: 0.8rem;
+      color: var(--muted);
+      border-top: 1px solid #222;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>☕ کافه آمارو</h1>
+    <p>قهوه‌ی تازه، لحظه‌های موندگار</p>
+  </header>
+
+  <div class="container">
+    <div class="menu-title">نوشیدنی‌های قهوه</div>
+
+    <div class="grid">
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348" alt="Espresso">
+        <div class="card-content">
+          <h3>اسپرسو</h3>
+          <p>قهوه خالص با طعمی قوی و عمیق</p>
+          <div class="price">85,000 تومان</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93" alt="Cappuccino">
+        <div class="card-content">
+          <h3>کاپوچینو</h3>
+          <p>ترکیب اسپرسو، شیر داغ و فوم نرم</p>
+          <div class="price">110,000 تومان</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1521305916504-4a1121188589" alt="Latte">
+        <div class="card-content">
+          <h3>لاته</h3>
+          <p>ملایم، خامه‌ای و مناسب هر سلیقه</p>
+          <div class="price">120,000 تومان</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd" alt="Mocha">
+        <div class="card-content">
+          <h3>موکا</h3>
+          <p>قهوه با شکلات، شیرین و خاص</p>
+          <div class="price">135,000 تومان</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    © 2025 کافه آمارو — اسکن کن، انتخاب کن، لذت ببر
+  </footer>
+
+</body>
 </html>
